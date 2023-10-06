@@ -11,7 +11,7 @@ public class Student {
  
  @Id 
  @GeneratedValue(strategy=GenerationType.AUTO)
- private long stuId;
+ private long studId;
  
  //@Column(name="name")
  private String firstName;
@@ -71,6 +71,16 @@ public String getGrade() {
 
 public void setGrade(String grade) {
 	this.grade = grade;
+}
+
+
+public long getStudId() {
+	return studId;
+}
+
+
+public void setStudId(long studId) {
+	this.studId = studId;
 }
 
 
